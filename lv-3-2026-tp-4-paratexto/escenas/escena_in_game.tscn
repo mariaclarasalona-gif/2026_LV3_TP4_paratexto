@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://b1aw6t3qsrecc"]
 
+[ext_resource type="Script" uid="uid://b6te5ibgoon81" path="res://scripts/game_manager.gd" id="1_cbidq"]
+[ext_resource type="PackedScene" uid="uid://2ttvses1rjhk" path="res://escenas/escena_objeto.tscn" id="1_ntwcm"]
+[ext_resource type="PackedScene" uid="uid://c17cu5msoss0l" path="res://escenas/escena_lista.tscn" id="2_uvhu4"]
+
 [sub_resource type="Gradient" id="Gradient_j4sy0"]
 offsets = PackedFloat32Array(0, 0.77710843, 1)
 colors = PackedColorArray(0.39248466, 0.30539083, 0.18681645, 1, 0.24005222, 0.5325506, 0.63490707, 1, 0.29879504, 0.7040924, 0.71373314, 1)
@@ -7,13 +11,16 @@ colors = PackedColorArray(0.39248466, 0.30539083, 0.18681645, 1, 0.24005222, 0.5
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_nlmh5"]
 gradient = SubResource("Gradient_j4sy0")
 
-[node name="game_manager" type="Control" unique_id=1130406808]
+[node name="game_manager" type="Control" unique_id=1130406808 node_paths=PackedStringArray("container_objetos", "lista")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cbidq")
+container_objetos = NodePath("container_objetos")
+lista = NodePath("escena_lista")
 
 [node name="container_UI" type="Control" parent="." unique_id=917628729]
 layout_mode = 1
@@ -31,3 +38,58 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture1D_nlmh5")
+
+[node name="container_objetos" type="Control" parent="." unique_id=1803206316]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="objeto0" parent="container_objetos" unique_id=1848360090 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = 341.0
+offset_top = 160.0
+offset_right = 490.0
+offset_bottom = 300.0
+
+[node name="objeto1" parent="container_objetos" unique_id=1070698480 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = 160.0
+offset_top = -207.0
+offset_right = 309.0
+offset_bottom = -67.0
+
+[node name="objeto2" parent="container_objetos" unique_id=347367949 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = -242.0
+offset_top = -263.0
+offset_right = -93.0
+offset_bottom = -123.0
+
+[node name="objeto3" parent="container_objetos" unique_id=1683638524 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = -141.0
+offset_top = 70.0
+offset_right = 8.0
+offset_bottom = 210.0
+
+[node name="objeto4" parent="container_objetos" unique_id=1661644498 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = -491.0
+offset_right = -342.0
+offset_bottom = 76.0
+
+[node name="escena_lista" parent="." unique_id=1333590021 instance=ExtResource("2_uvhu4")]
+layout_mode = 1
+offset_left = 24.0
+offset_top = 415.0
+offset_right = -797.0
+offset_bottom = 130.0
+
+[connection signal="pressed" from="container_objetos/objeto0" to="." method="encontro_objeto" binds= [0]]
+[connection signal="pressed" from="container_objetos/objeto1" to="." method="encontro_objeto" binds= [1]]
+[connection signal="pressed" from="container_objetos/objeto2" to="." method="encontro_objeto" binds= [2]]
+[connection signal="pressed" from="container_objetos/objeto3" to="." method="encontro_objeto" binds= [3]]
+[connection signal="pressed" from="container_objetos/objeto4" to="." method="encontro_objeto" binds= [4]]
