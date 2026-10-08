@@ -18,10 +18,14 @@ func _input(event: InputEvent) -> void:
 			animator_texto.active = false
 			texto.visible_ratio = 1
 			termino_animacion = true
+		
 		else:
-			linea_texto_actual += 1
-			termino_animacion = false
-			animator_texto.active = true
+			linea_texto_actual +=1
+			if linea_texto_actual >= (arreglo_lineas_texto.size()):
+				get_tree().change_scene_to_file("res://escenas/escena_in_game.tscn")
+			else:
+				termino_animacion = false
+				animator_texto.active = true
 		
 		print("click en pantalla")
 
