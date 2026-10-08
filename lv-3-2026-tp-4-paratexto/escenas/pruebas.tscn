@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://8ig6id8hsplb"]
+
+[ext_resource type="Script" uid="uid://blv3rfprfpjsv" path="res://escenas/collision_shape_2d.gd" id="1_gsmxe"]
+[ext_resource type="Texture2D" uid="uid://dfeut43jm528t" path="res://assets/LV3_TP4_paratexto_bg_main.png" id="1_vb5qb"]
+[ext_resource type="Texture2D" uid="uid://bklj8b843wlv4" path="res://assets/Screenshot 2024-03-19 173226.png" id="2_yynwe"]
+[ext_resource type="Texture2D" uid="uid://c5dqwnphq87fn" path="res://assets/LV3_TP4_paratexto_hud.png" id="4_n7aun"]
+[ext_resource type="FontFile" uid="uid://cvn0x186fjfng" path="res://assets/comic.ttf" id="5_jn1yy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yynwe"]
+size = Vector2(1.4549999, 1.7249999)
+
+[node name="Node" type="Node" unique_id=857183452]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1706768513]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=501358006]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_vb5qb")
+
+[node name="Jerma" type="Area2D" parent="." unique_id=640708877]
+position = Vector2(300, 0)
+scale = Vector2(200, 200)
+
+[node name="Sprite2D" type="Sprite2D" parent="Jerma" unique_id=2072568052]
+scale = Vector2(0.0016000983, 0.0016000983)
+texture = ExtResource("2_yynwe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jerma" unique_id=688054065]
+position = Vector2(-0.0025000572, 0.0025000286)
+shape = SubResource("RectangleShape2D_yynwe")
+script = ExtResource("1_gsmxe")
+
+[node name="hud" type="Sprite2D" parent="." unique_id=1596423123]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_n7aun")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="hud" unique_id=1756910683]
+anchors_preset = -1
+anchor_right = 0.063
+anchor_bottom = 0.063
+offset_left = -858.3333
+offset_top = 403.3333
+offset_right = -591.9093
+offset_bottom = 545.3333
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_jn1yy")
+theme_override_font_sizes/normal_font_size = 50
+text = "Jerma Senpai"
+fit_content = true
