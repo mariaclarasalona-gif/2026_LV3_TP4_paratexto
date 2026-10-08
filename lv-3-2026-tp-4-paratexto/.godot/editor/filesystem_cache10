@@ -1,0 +1,11 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1791495138
+icon.svg::CompressedTexture2D::5501270729083692581::1791495086::1791495138::1::::<><><>0<>0<>a1f0b8c866bcd89e8b6da693c2b7584a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1791495086
+comic.ttf::FontFile::6275204410667822732::1791495086::1791495138::1::::<><><>0<>0<>f4e831626f84dcc76f82439f60534f79<>res://.godot/imported/comic.ttf-b9811063eb902f212f8f54643912dc23.fontdata::
+LV3_TP4_paratexto_bg_main.png::CompressedTexture2D::7519713617083070641::1791495086::1791495138::1::::<><><>0<>0<>c367579016b389338721b4259854dd36<>res://.godot/imported/LV3_TP4_paratexto_bg_main.png-cf67fbea92348014333dbb8659d2e32b.ctex::
+LV3_TP4_paratexto_hud.png::CompressedTexture2D::6885711275455905759::1791495086::1791495138::1::::<><><>0<>0<>2dbbc023ec2be1a65ac43a9c15d15df5<>res://.godot/imported/LV3_TP4_paratexto_hud.png-edaf2f959fef8f67e5375bedc76298e3.ctex::
+Screenshot 2024-03-19 173226.png::CompressedTexture2D::3111622764359660899::1791495086::1791495138::1::::<><><>0<>0<>72e41d29b3fb9e94bb783de6514c7ae2<>res://.godot/imported/Screenshot 2024-03-19 173226.png-b7dc056053684040681315547098e1dd.ctex::
+::res://escenas/::1791495086
+collision_shape_2d.gd::GDScript::3203580617409058245::1791495086::0::1::::<>CollisionShape2D<><>0<>0<><>::
+pruebas.tscn::PackedScene::2333166949985860371::1791495086::0::1::::<><><>0<>0<><>::uid://blv3rfprfpjsv::::res://escenas/collision_shape_2d.gd<>uid://dfeut43jm528t::::res://assets/LV3_TP4_paratexto_bg_main.png<>uid://bklj8b843wlv4::::res://assets/Screenshot 2024-03-19 173226.png<>uid://c5dqwnphq87fn::::res://assets/LV3_TP4_paratexto_hud.png<>uid://cvn0x186fjfng::::res://assets/comic.ttf

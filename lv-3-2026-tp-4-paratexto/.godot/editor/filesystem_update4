@@ -1,0 +1,5 @@
+res://escenas/escena_intro.tscn
+res://escenas/escena_outro.tscn
+res://escenas/escena_in_game.tscn
+res://escenas/escena_lista.tscn
+res://scripts/escena_outro.gd

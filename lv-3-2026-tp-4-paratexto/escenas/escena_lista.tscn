@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://c17cu5msoss0l"]
+
+[ext_resource type="Texture2D" uid="uid://ckm4eixm48uq4" path="res://icon.svg" id="1_s70y2"]
+
+[node name="escena_lista" type="Control" unique_id=1333590021]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="textura_fondo" type="TextureRect" parent="." unique_id=1605950833]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s70y2")
+
+[node name="margen_objetos" type="MarginContainer" parent="." unique_id=1605156351]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="container_objetos" type="VBoxContainer" parent="margen_objetos" unique_id=966258575]
+layout_mode = 2
+
+[node name="objeto1" type="RichTextLabel" parent="margen_objetos/container_objetos" unique_id=1817175281]
+custom_minimum_size = Vector2(500, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+text = "Este es un objeto que hay que buscar!"
+horizontal_alignment = 1
+
+[node name="objeto2" type="RichTextLabel" parent="margen_objetos/container_objetos" unique_id=152073807]
+custom_minimum_size = Vector2(500, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+text = "Este es un objeto que hay que buscar!"
+horizontal_alignment = 1
+
+[node name="objeto3" type="RichTextLabel" parent="margen_objetos/container_objetos" unique_id=1949707300]
+custom_minimum_size = Vector2(500, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+text = "Este es un objeto que hay que buscar!"
+horizontal_alignment = 1
+
+[node name="objeto4" type="RichTextLabel" parent="margen_objetos/container_objetos" unique_id=1884236188]
+custom_minimum_size = Vector2(500, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+text = "Este es un objeto que hay que buscar!"
+horizontal_alignment = 1
+
+[node name="objeto5" type="RichTextLabel" parent="margen_objetos/container_objetos" unique_id=1471097200]
+custom_minimum_size = Vector2(500, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+text = "Este es un objeto que hay que buscar!"
+horizontal_alignment = 1

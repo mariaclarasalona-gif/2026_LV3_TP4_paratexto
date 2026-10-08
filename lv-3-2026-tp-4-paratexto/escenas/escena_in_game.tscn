@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b1aw6t3qsrecc"]
+
+[sub_resource type="Gradient" id="Gradient_j4sy0"]
+offsets = PackedFloat32Array(0, 0.77710843, 1)
+colors = PackedColorArray(0, 0.39566627, 0, 1, 0.5153825, 0.5082144, 0.14620796, 1, 1, 0.14117648, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nlmh5"]
+gradient = SubResource("Gradient_j4sy0")
+
+[node name="game_manager" type="Control" unique_id=1130406808]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="container_UI" type="Control" parent="." unique_id=917628729]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="imagen_fondo" type="TextureRect" parent="container_UI" unique_id=2000931629]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_nlmh5")

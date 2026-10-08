@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bfrkwvcw75rwq"]
+
+[ext_resource type="Script" uid="uid://7ujlrqrinsig" path="res://scripts/escena_outro.gd" id="1_jwg67"]
+
+[sub_resource type="Gradient" id="Gradient_pj0yc"]
+offsets = PackedFloat32Array(0, 0.77710843, 1)
+colors = PackedColorArray(0, 0.39566627, 0, 1, 0.5153825, 0.5082144, 0.14620796, 1, 1, 0.14117648, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_60eo1"]
+gradient = SubResource("Gradient_pj0yc")
+
+[node name="escena_outro" type="Control" unique_id=1441439676]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwg67")
+
+[node name="container_UI" type="Control" parent="." unique_id=379662745]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="imagen_fondo" type="TextureRect" parent="container_UI" unique_id=1281256007]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_60eo1")
+
+[node name="texto" type="RichTextLabel" parent="container_UI" unique_id=692339250]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "HOLAAAAAAA ACÁ VA TEXTOOOOOOOOO"
