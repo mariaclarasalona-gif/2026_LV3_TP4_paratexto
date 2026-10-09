@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://bfrkwvcw75rwq"]
+
+[ext_resource type="Script" uid="uid://7ujlrqrinsig" path="res://scripts/escena_outro.gd" id="1_jwg67"]
+[ext_resource type="Texture2D" uid="uid://0euu1ejgaioj" path="res://assets/fondo_introoutro_vF.png" id="2_pj0yc"]
+
+[sub_resource type="Animation" id="Animation_jwg67"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_pj0yc"]
+resource_name = "texto_aparece"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5rmqv"]
+_data = {
+&"RESET": SubResource("Animation_jwg67"),
+&"texto_aparece": SubResource("Animation_pj0yc")
+}
+
+[node name="escena_outro" type="Control" unique_id=1441439676 node_paths=PackedStringArray("animator_texto", "texto")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwg67")
+animator_texto = NodePath("container_UI/texto/AnimationPlayer")
+texto = NodePath("container_UI/texto")
+
+[node name="container_UI" type="Control" parent="." unique_id=379662745]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="imagen_fondo" type="TextureRect" parent="container_UI" unique_id=1281256007]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pj0yc")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texto" type="RichTextLabel" parent="container_UI" unique_id=692339250]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "HOLAAAAAAA ACÁ VA TEXTOOOOOOOOO"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="container_UI/texto" unique_id=1807929101]
+libraries/ = SubResource("AnimationLibrary_5rmqv")

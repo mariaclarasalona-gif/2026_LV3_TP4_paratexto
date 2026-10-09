@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://b1aw6t3qsrecc"]
+
+[ext_resource type="Script" uid="uid://b6te5ibgoon81" path="res://scripts/game_manager.gd" id="1_cbidq"]
+[ext_resource type="PackedScene" uid="uid://2ttvses1rjhk" path="res://escenas/escena_objeto.tscn" id="1_ntwcm"]
+[ext_resource type="Texture2D" uid="uid://cnky35bhqc21j" path="res://assets/fondo_main_vF.png" id="2_dk0hl"]
+[ext_resource type="PackedScene" uid="uid://c17cu5msoss0l" path="res://escenas/escena_lista.tscn" id="2_uvhu4"]
+[ext_resource type="Texture2D" uid="uid://chj6fe6hssdq4" path="res://assets/LV3_TP4_paratexto_tunica.png" id="4_262fi"]
+[ext_resource type="Texture2D" uid="uid://kqfvbmjta62k" path="res://assets/LV3_TP4_paratexto_daga.png" id="4_isaut"]
+[ext_resource type="Texture2D" uid="uid://q747mlvgpup4" path="res://assets/LV3_TP4_paratexto_vaso.png" id="4_sdco4"]
+[ext_resource type="Texture2D" uid="uid://cjdwthnpqg4m0" path="res://assets/LV3_TP4_paratexto_libreta.png" id="5_fbjup"]
+[ext_resource type="Texture2D" uid="uid://cfy127isfywb3" path="res://assets/LV3_TP4_paratexto_foto.png" id="5_hg3ci"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_isaut"]
+resource_name = "res://.godot/imported/fondo_main_vF.png-c7c76e5a20f51715b56d61f9b84cc0c7.ctex"
+
+[node name="game_manager" type="Control" unique_id=1130406808 node_paths=PackedStringArray("container_objetos", "lista")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cbidq")
+container_objetos = NodePath("container_objetos")
+lista = NodePath("escena_lista")
+
+[node name="container_UI" type="Control" parent="." unique_id=917628729]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="container_UI" unique_id=929691552]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("ImageTexture_isaut")
+
+[node name="Sprite2D" type="Sprite2D" parent="container_UI" unique_id=1253557050]
+position = Vector2(577.77783, 325.00003)
+scale = Vector2(0.59814817, 0.59814817)
+texture = ExtResource("2_dk0hl")
+
+[node name="container_objetos" type="Control" parent="." unique_id=1803206316]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="objeto0" parent="container_objetos" unique_id=1848360090 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = 116.0
+offset_top = 61.0
+offset_right = 346.5
+offset_bottom = 231.0
+texture_normal = ExtResource("4_262fi")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="objeto1" parent="container_objetos" unique_id=1070698480 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = 384.0
+offset_top = -170.0
+offset_right = 528.0
+offset_bottom = -53.0
+texture_normal = ExtResource("5_hg3ci")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="objeto2" parent="container_objetos" unique_id=347367949 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = -227.0
+offset_top = -55.0
+offset_right = -91.0
+offset_bottom = 57.0
+texture_normal = ExtResource("4_sdco4")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="objeto3" parent="container_objetos" unique_id=1683638524 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = -230.0
+offset_top = 60.0
+offset_right = -72.0
+offset_bottom = 139.0
+texture_normal = ExtResource("5_fbjup")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="objeto4" parent="container_objetos" unique_id=1661644498 instance=ExtResource("1_ntwcm")]
+layout_mode = 1
+offset_left = -496.0
+offset_top = -285.0
+offset_right = -364.0
+offset_bottom = -54.0
+texture_normal = ExtResource("4_isaut")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="escena_lista" parent="." unique_id=1333590021 instance=ExtResource("2_uvhu4")]
+layout_mode = 1
+
+[connection signal="pressed" from="container_objetos/objeto0" to="." method="encontro_objeto" binds= [0]]
+[connection signal="pressed" from="container_objetos/objeto1" to="." method="encontro_objeto" binds= [1]]
+[connection signal="pressed" from="container_objetos/objeto2" to="." method="encontro_objeto" binds= [2]]
+[connection signal="pressed" from="container_objetos/objeto3" to="." method="encontro_objeto" binds= [3]]
+[connection signal="pressed" from="container_objetos/objeto4" to="." method="encontro_objeto" binds= [4]]
