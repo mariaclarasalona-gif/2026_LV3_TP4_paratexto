@@ -73,10 +73,15 @@ stretch_mode = 4
 
 [node name="objeto2" parent="container_objetos" unique_id=347367949 instance=ExtResource("1_ntwcm")]
 layout_mode = 1
-offset_left = -227.0
-offset_top = -55.0
-offset_right = -91.0
-offset_bottom = 57.0
+anchors_preset = -1
+anchor_left = 0.303
+anchor_top = 0.41500002
+anchor_right = 0.42100003
+anchor_bottom = 0.588
+offset_left = -0.055999756
+offset_top = 0.07998657
+offset_right = 0.007965088
+offset_bottom = -0.023986816
 texture_normal = ExtResource("4_sdco4")
 ignore_texture_size = true
 stretch_mode = 4
@@ -103,6 +108,9 @@ stretch_mode = 4
 
 [node name="escena_lista" parent="." unique_id=1333590021 instance=ExtResource("2_uvhu4")]
 layout_mode = 1
+offset_top = 515.0
+offset_right = 3.0
+offset_bottom = 1.0
 
 [connection signal="pressed" from="container_objetos/objeto0" to="." method="encontro_objeto" binds= [0]]
 [connection signal="pressed" from="container_objetos/objeto1" to="." method="encontro_objeto" binds= [1]]

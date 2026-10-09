@@ -8,9 +8,9 @@ var arreglo_lineas_texto_intro = [
 ]
 
 var arreglo_lineas_texto_outro = [
-	"ya encontraste todos los objetos eaaa",
-	"ahora el juego se termina u-u",
-	"llorá, emocionate"
+	"En estos barrios...",
+	"estar afilado suele acortar la salud.",
+	"Continua leyendo para saber en quién no deberías confiar."
 ]
 
 var termino_animacion = false
