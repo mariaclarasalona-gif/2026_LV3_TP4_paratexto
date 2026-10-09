@@ -25,3 +25,5 @@ func cargar_objetos():
 func encontro_objeto(numero):
 	objetos_encontrados += 1
 	lista.tachar_texto(numero)
+	await get_tree().create_timer(0.2).timeout
+	arreglo_objetos[numero].queue_free()

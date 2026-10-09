@@ -1,11 +1,20 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1791495138
+::res://::1791514823
 icon.svg::CompressedTexture2D::5501270729083692581::1791495086::1791495138::1::::<><><>0<>0<>a1f0b8c866bcd89e8b6da693c2b7584a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1791495086
+::res://assets/::1791495138
 comic.ttf::FontFile::6275204410667822732::1791495086::1791495138::1::::<><><>0<>0<>f4e831626f84dcc76f82439f60534f79<>res://.godot/imported/comic.ttf-b9811063eb902f212f8f54643912dc23.fontdata::
 LV3_TP4_paratexto_bg_main.png::CompressedTexture2D::7519713617083070641::1791495086::1791495138::1::::<><><>0<>0<>c367579016b389338721b4259854dd36<>res://.godot/imported/LV3_TP4_paratexto_bg_main.png-cf67fbea92348014333dbb8659d2e32b.ctex::
 LV3_TP4_paratexto_hud.png::CompressedTexture2D::6885711275455905759::1791495086::1791495138::1::::<><><>0<>0<>2dbbc023ec2be1a65ac43a9c15d15df5<>res://.godot/imported/LV3_TP4_paratexto_hud.png-edaf2f959fef8f67e5375bedc76298e3.ctex::
 Screenshot 2024-03-19 173226.png::CompressedTexture2D::3111622764359660899::1791495086::1791495138::1::::<><><>0<>0<>72e41d29b3fb9e94bb783de6514c7ae2<>res://.godot/imported/Screenshot 2024-03-19 173226.png-b7dc056053684040681315547098e1dd.ctex::
-::res://escenas/::1791495086
+::res://escenas/::1791502782
 collision_shape_2d.gd::GDScript::3203580617409058245::1791495086::0::1::::<>CollisionShape2D<><>0<>0<><>::
+escena_intro.tscn::PackedScene::446199602991857517::1791502782::0::1::::<><><>0<>0<><>::uid://7ujlrqrinsig::::res://scripts/escena_outro.gd
+escena_in_game.tscn::PackedScene::4212722793683727102::1791502341::0::1::::<><><>0<>0<><>::uid://b6te5ibgoon81::::res://scripts/game_manager.gd<>uid://2ttvses1rjhk::::res://escenas/escena_objeto.tscn<>uid://c17cu5msoss0l::::res://escenas/escena_lista.tscn
+escena_lista.tscn::PackedScene::6663970135044020565::1791502386::0::1::::<><><>0<>0<><>::uid://ckm4eixm48uq4::::res://icon.svg<>uid://b854vjajyjhkl::::res://scripts/escena_lista.gd
+escena_objeto.tscn::PackedScene::1935514032541357188::1791502201::0::1::::<><><>0<>0<><>::uid://ckm4eixm48uq4::::res://icon.svg
+escena_outro.tscn::PackedScene::2773106888219354992::1791497526::0::1::::<><><>0<>0<><>::uid://7ujlrqrinsig::::res://scripts/escena_outro.gd
 pruebas.tscn::PackedScene::2333166949985860371::1791495086::0::1::::<><><>0<>0<><>::uid://blv3rfprfpjsv::::res://escenas/collision_shape_2d.gd<>uid://dfeut43jm528t::::res://assets/LV3_TP4_paratexto_bg_main.png<>uid://bklj8b843wlv4::::res://assets/Screenshot 2024-03-19 173226.png<>uid://c5dqwnphq87fn::::res://assets/LV3_TP4_paratexto_hud.png<>uid://cvn0x186fjfng::::res://assets/comic.ttf
+::res://scripts/::1791502771
+escena_lista.gd::GDScript::4766382623983697635::1791502375::0::1::::<>Control<><>0<>0<><>::
+escena_outro.gd::GDScript::2287897566563531878::1791502702::0::1::::<>Control<><>0<>0<><>::
+game_manager.gd::GDScript::4601794877610946688::1791502771::0::1::::<>Control<><>0<>0<><>::
