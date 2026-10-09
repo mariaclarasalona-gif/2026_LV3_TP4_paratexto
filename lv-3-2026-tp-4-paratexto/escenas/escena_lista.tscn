@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://c17cu5msoss0l"]
 
 [ext_resource type="Script" uid="uid://b854vjajyjhkl" path="res://scripts/escena_lista.gd" id="1_t3np7"]
-[ext_resource type="Texture2D" uid="uid://c5dqwnphq87fn" path="res://assets/LV3_TP4_paratexto_hud.png" id="2_t3np7"]
 
 [node name="escena_lista" type="Control" unique_id=1333590021 node_paths=PackedStringArray("container_objetos")]
 layout_mode = 3
@@ -11,34 +10,32 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_t3np7")
-container_objetos = NodePath("")
+container_objetos = NodePath("margen_objetos/HBoxContainer")
 
-[node name="textura_fondo" type="TextureRect" parent="." unique_id=1605950833]
+[node name="textura_fondo" type="ColorRect" parent="." unique_id=477429880]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_top = -11.0
-offset_right = 1.0
-offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_t3np7")
-expand_mode = 1
-stretch_mode = 5
+color = Color(0, 0, 0, 0.8)
 
 [node name="margen_objetos" type="MarginContainer" parent="." unique_id=1605156351]
 z_as_relative = false
 layout_direction = 2
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -206.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -550.0
+offset_top = -40.0
+offset_right = 550.0
+offset_bottom = 40.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
@@ -46,44 +43,51 @@ theme_override_constants/margin_bottom = 20
 
 [node name="HBoxContainer" type="HBoxContainer" parent="margen_objetos" unique_id=1525379352]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 40
 
 [node name="objeto0" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1817175281]
-custom_minimum_size = Vector2(500, 30)
+custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 0
 bbcode_enabled = true
 text = "Fotografía"
 autowrap_trim_flags = 0
 horizontal_alignment = 1
 
 [node name="objeto1" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=152073807]
-custom_minimum_size = Vector2(500, 30)
+custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 0
 bbcode_enabled = true
 text = "Vaso de café vacío"
 horizontal_alignment = 1
 
 [node name="objeto2" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1949707300]
-custom_minimum_size = Vector2(500, 30)
+custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 0
 bbcode_enabled = true
 text = "Libreta anotador"
 horizontal_alignment = 1
 
 [node name="objeto3" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1884236188]
-custom_minimum_size = Vector2(500, 30)
+custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 0
 bbcode_enabled = true
 text = "Túnica cultista"
 horizontal_alignment = 1
 
 [node name="objeto4" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1471097200]
-custom_minimum_size = Vector2(500, 30)
+custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 0
 bbcode_enabled = true
 text = "Daga"
 horizontal_alignment = 1
