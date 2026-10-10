@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c17cu5msoss0l"]
 
 [ext_resource type="Script" uid="uid://b854vjajyjhkl" path="res://scripts/escena_lista.gd" id="1_t3np7"]
+[ext_resource type="FontFile" uid="uid://cvn0x186fjfng" path="res://assets/comic.ttf" id="2_t3np7"]
 
 [node name="escena_lista" type="Control" unique_id=1333590021 node_paths=PackedStringArray("container_objetos")]
 layout_mode = 3
@@ -51,8 +52,10 @@ custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
+theme_override_fonts/normal_font = ExtResource("2_t3np7")
+theme_override_font_sizes/normal_font_size = 18
 bbcode_enabled = true
-text = "Fotografía"
+text = "Túnica cultista"
 autowrap_trim_flags = 0
 horizontal_alignment = 1
 
@@ -61,8 +64,10 @@ custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
+theme_override_fonts/normal_font = ExtResource("2_t3np7")
+theme_override_font_sizes/normal_font_size = 18
 bbcode_enabled = true
-text = "Vaso de café vacío"
+text = "Fotografía"
 horizontal_alignment = 1
 
 [node name="objeto2" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1949707300]
@@ -70,8 +75,10 @@ custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
+theme_override_fonts/normal_font = ExtResource("2_t3np7")
+theme_override_font_sizes/normal_font_size = 18
 bbcode_enabled = true
-text = "Libreta anotador"
+text = "Vaso de café vacío "
 horizontal_alignment = 1
 
 [node name="objeto3" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1884236188]
@@ -79,8 +86,10 @@ custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
+theme_override_fonts/normal_font = ExtResource("2_t3np7")
+theme_override_font_sizes/normal_font_size = 18
 bbcode_enabled = true
-text = "Túnica cultista"
+text = "Libreta anotador"
 horizontal_alignment = 1
 
 [node name="objeto4" type="RichTextLabel" parent="margen_objetos/HBoxContainer" unique_id=1471097200]
@@ -88,6 +97,8 @@ custom_minimum_size = Vector2(180, 40)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
+theme_override_fonts/normal_font = ExtResource("2_t3np7")
+theme_override_font_sizes/normal_font_size = 18
 bbcode_enabled = true
 text = "Daga"
 horizontal_alignment = 1

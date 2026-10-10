@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://7ujlrqrinsig" path="res://scripts/escena_outro.gd" id="1_jwg67"]
 [ext_resource type="Texture2D" uid="uid://0euu1ejgaioj" path="res://assets/fondo_introoutro_vF.png" id="2_pj0yc"]
+[ext_resource type="FontFile" uid="uid://cvn0x186fjfng" path="res://assets/comic.ttf" id="3_5rmqv"]
 
 [sub_resource type="Animation" id="Animation_jwg67"]
 length = 0.001
@@ -84,6 +85,8 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_5rmqv")
+theme_override_font_sizes/normal_font_size = 25
 text = "HOLAAAAAAA ACÁ VA TEXTOOOOOOOOO"
 visible_characters = 0
 visible_ratio = 0.0
